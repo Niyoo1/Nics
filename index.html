@@ -117,39 +117,6 @@
             object-fit: cover;
         }
 
-        .side-gifs {
-            display: flex;
-            justify-content: center;
-            gap: 15px;
-            margin-bottom: 30px;
-            flex-wrap: wrap;
-        }
-
-        .side-gif {
-            width: 100px;
-            height: 100px;
-            border-radius: 20px;
-            overflow: hidden;
-            box-shadow: 0 10px 25px rgba(255, 182, 217, 0.4);
-            border: 3px solid rgba(255, 255, 255, 0.8);
-            animation: float 3s ease-in-out infinite;
-        }
-
-        .side-gif:nth-child(1) { animation-delay: 0s; }
-        .side-gif:nth-child(2) { animation-delay: 0.5s; }
-        .side-gif:nth-child(3) { animation-delay: 1s; }
-
-        @keyframes float {
-            0%, 100% { transform: translateY(0px); }
-            50% { transform: translateY(-10px); }
-        }
-
-        .side-gif img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-
         .photo-frame {
             width: 140px;
             height: 140px;
@@ -411,13 +378,6 @@
             box-shadow: 0 10px 30px rgba(255, 182, 217, 0.6);
         }
 
-        #noButton {
-            background: linear-gradient(135deg, var(--baby-blue), #A8D8FF);
-            color: white;
-            position: absolute;
-            transition: all 0.3s ease;
-        }
-
         .success-overlay {
             display: none;
             position: fixed;
@@ -545,11 +505,6 @@
                 height: 250px;
             }
 
-            .side-gif {
-                width: 80px;
-                height: 80px;
-            }
-
             .open-button {
                 font-size: 19px;
                 padding: 16px 40px;
@@ -587,20 +542,7 @@
         <div class="initial-content">
             <!-- Main GIF -->
             <div class="main-gif">
-                <img src="https://media.tenor.com/T00J36j7besAAAAi/love-you-bear.gif" alt="Cute romantic animation">
-            </div>
-
-            <!-- Side GIFs -->
-            <div class="side-gifs">
-                <div class="side-gif">
-                    <img src="https://media.tenor.com/gUiu1zyxfzYAAAAi/bear-kiss-bear-kisses.gif" alt="Heart animation">
-                </div>
-                <div class="side-gif">
-                    <img src="https://media.tenor.com/tSg0T5bY7hsAAAAi/bear-love.gif" alt="Cute bear">
-                </div>
-                <div class="side-gif">
-                    <img src="https://media.tenor.com/h-4RCXv84AAAAi/milk-and-mocha-love.gif" alt="Love animation">
-                </div>
+                <img src="https://media.giphy.com/media/kZqbBT64ECtjy/giphy.gif" alt="Hello Kitty cute animation">
             </div>
 
             <!-- Photo Frame -->
@@ -624,7 +566,7 @@
         <div class="letter-card">
             <!-- Letter GIF -->
             <div class="letter-gif">
-                <img src="https://media.tenor.com/OKNlPYt_xCIAAAAi/love-letter.gif" alt="Love letter animation">
+                <img src="https://media.giphy.com/media/fUQ4rhUZJYiQsas6WD/giphy.gif" alt="Elmo love animation">
             </div>
 
             <div class="letter-header">
@@ -634,10 +576,9 @@
             
             <!-- Question Section -->
             <div class="question-section" id="questionSection">
-                <p class="question-text">Are you suuuure? 🥺</p>
+                <p class="question-text">Will you be my Valentine? 🥺💕</p>
                 <div class="buttons-container" id="buttonsContainer">
-                    <button class="choice-button" id="yesButton">💕 Yes</button>
-                    <button class="choice-button" id="noButton">🙈 No</button>
+                    <button class="choice-button" id="yesButton">💕 Yes, I Will!</button>
                 </div>
             </div>
         </div>
@@ -648,7 +589,7 @@
         <div class="success-content">
             <!-- Success GIF -->
             <div class="success-gif">
-                <img src="https://media.tenor.com/LcKTJy45XvMAAAAi/milk-and-mocha-happy.gif" alt="Celebration">
+                <img src="https://media.giphy.com/media/DyQrKMpqkAhNHZ1iWe/giphy.gif" alt="LINE Friends celebration">
             </div>
             <h2>Yay! You just made me the happiest person alive 💞✨</h2>
             <div style="font-size: 60px; margin-top: 20px;">🎉💖🎊</div>
@@ -761,15 +702,28 @@
             
             setTimeout(() => {
                 // The romantic message
-                const message = `From the moment I saw you, I knew my heart had found its home. Every day with you feels like a beautiful dream I never want to wake up from. Your smile lights up my darkest days, and your laughter is the sweetest melody I've ever heard.
+                const message = `Happy Valentine's Day, Love ❤️
 
-You make me believe in magic, in fairy tales, in forever. With you, every moment becomes a precious memory, every second a treasure I hold close to my heart.
+Hi Love
 
-I want to be the reason behind your smile, the one who holds your hand through every adventure, the one who loves you more with each passing day.
+Happy Valentine's Day. Before anything else, gusto ko lang sabihin na sobrang thankful ako sa'yo. Thank you for loving me, for staying, for supporting me in so many ways — emotionally, mentally, and yes… even financially minsan hahaha. naa-appreciate ko talaga lahat ng ginagawa mo para sa'kin. 
 
-So here I am, with my heart in my hands, asking you the most important question...
+Love, alam ko hindi naging madali ang relationship natin. Especially because of my past mistakes. I know nasaktan kita before. I know I broke your trust. Kahit sabihin ko pang "wala lang yun" or "hindi seryoso," the truth is, it still hurt you. And for that, I am truly sorry.
 
-Will you be mine? 💕`;
+Thank you for giving me another chance. I know trust is not something that comes back overnight. I know may mga times na nagagalit ka pa rin, or natatakot, or nag-ooverthink because of what I did. And I understand that. I accept that. Responsibility ko yun.
+
+I'm sorry din kung minsan nagiging dahilan pa ako ng galit mo ngayon. Minsan matigas ulo ko, minsan insensitive, minsan hindi ko agad naiintindihan feelings mo. Pero please know I'm trying. I'm trying to grow. I'm trying to be more mature. I'm trying to be the man you deserve.
+
+Love, you deserve loyalty. You deserve peace. You deserve reassurance. And I promise I'm working on becoming someone who can give you those consistently — not just in words, but in actions.
+
+Thank you for supporting me even when I don't always deserve it. Thank you for believing in me kahit may history na tayo na hindi perfect. Thank you for choosing me again.
+
+I don't want to repeat the same mistakes. Ayoko na masaktan ka ulit dahil sa'kin. I choose you. I choose us. Every day.
+
+Happy Valentine's Day, Love. I love you more than my pride, more than my mistakes, more than my past.
+
+Forever yours,
+Your baby ❤️`;
 
                 // Type the message
                 typeWriter(message, document.getElementById('letterMessage'), 30).then(() => {
@@ -781,62 +735,9 @@ Will you be mine? 💕`;
             }, 300);
         });
 
-        // No button logic
-        let yesButtonSize = 1;
-        let noButtonAttempts = 0;
-        const noButton = document.getElementById('noButton');
+        // Yes button
         const yesButton = document.getElementById('yesButton');
 
-        noButton.addEventListener('mouseenter', function() {
-            moveNoButton();
-        });
-
-        noButton.addEventListener('click', function(e) {
-            e.preventDefault();
-            moveNoButton();
-        });
-
-        // Also handle touch for mobile
-        noButton.addEventListener('touchstart', function(e) {
-            e.preventDefault();
-            moveNoButton();
-        });
-
-        function moveNoButton() {
-            const container = document.querySelector('.buttons-container');
-            const containerRect = container.getBoundingClientRect();
-            
-            noButtonAttempts++;
-            yesButtonSize += 0.2;
-            yesButton.style.transform = `scale(${yesButtonSize})`;
-            
-            const maxX = containerRect.width - noButton.offsetWidth - 20;
-            const maxY = containerRect.height - noButton.offsetHeight - 20;
-            
-            const randomX = Math.max(0, Math.random() * maxX);
-            const randomY = Math.max(0, Math.random() * maxY);
-            
-            noButton.style.left = randomX + 'px';
-            noButton.style.top = randomY + 'px';
-            
-            playSound(392, 0.1); // G note
-            
-            // Update question text based on attempts
-            const questionText = document.querySelector('.question-text');
-            const messages = [
-                'Are you suuuure? 🥺',
-                'Really? Think about it... 🥺💕',
-                'But... but... 🥺💖',
-                'Pretty please? 🥺✨',
-                'I know you want to say yes! 💕',
-                'The YES button is looking pretty good now, right? 😊',
-                'Come on... you know you want to! 💝',
-                'Just click YES already! 🥰'
-            ];
-            questionText.textContent = messages[Math.min(noButtonAttempts, messages.length - 1)];
-        }
-
-        // Yes button
         yesButton.addEventListener('click', function(e) {
             playSound(659.25, 0.3); // E note
             createSparkle(e.clientX, e.clientY);
